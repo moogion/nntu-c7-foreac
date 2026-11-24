@@ -6,10 +6,15 @@ platforms = ["win-64"]
 version = "0.1.0"
 
 [tasks]
-lab1-task1 = "python labs/1_analysis-of-entropy/assets/scripts/task1.py"
-lab1-task2 = "python labs/1_analysis-of-entropy/assets/scripts/task2.py"
-lab1-task3 = "python labs/1_analysis-of-entropy/assets/scripts/task3.py"
-lab1 = { depends-on = ["lab1-task1", "lab1-task2", "lab1-task3"] }
+lab2-task1 = "python labs/2_analysis-of-entropy/assets/scripts/task1.py"
+lab2-task2 = "python labs/2_analysis-of-entropy/assets/scripts/task2.py"
+lab2-task3 = "python labs/2_analysis-of-entropy/assets/scripts/task3.py"
+lab2 = { depends-on = ["lab2-task1", "lab2-task2", "lab2-task3"] }
+lab3 = "python labs/3_mtf-compression/assets/scripts/mtf.py"
+lab4-task1 = "python labs/4_error-control-coding/assets/scripts/task1.py"
+lab4-task2 = "python labs/4_error-control-coding/assets/scripts/task2.py"
+lab4-task3 = "python labs/4_error-control-coding/assets/scripts/task3.py"
+lab4 = { depends-on = ["lab4-task1", "lab4-task2", "lab4-task3"] }
 
 [dependencies]
 python = ">=3.14.3,<3.15"
@@ -17,3 +22,4 @@ numpy = ">=2.4.3,<3"
 matplotlib = ">=3.11.2,<4"
 scipy = ">=1.17.1,<2"
 sympy = ">=1.14.0,<2"
+requests = ">=2.34.2,<3"
